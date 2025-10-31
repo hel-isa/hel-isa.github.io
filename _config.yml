@@ -7,6 +7,10 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Identify the repo for the github-metadata plugin
+repository: hel-isa/hel-isa.github.io
+url: https://hel-isa.github.io
+
 # Site metadata
 author:
   name: Heloisa Reis
