@@ -1,2 +1,21 @@
-theme: jekyll-theme-minimal
-title: Hel-Isa's homepage
+title: Heloisa — AppSec Lead
+description: AppSec • DevSecOps • Secure SDLC — EN / FR / BR
+theme: minima
+
+# Optional polish
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Site metadata
+author:
+  name: Heloisa Reis
+  email: helo.ca@icloud.com
+
+# Social (shown by minima if configured)
+minima:
+  social_links:
+    - platform: github
+      user_url: https://github.com/hel-isa
+    - platform: linkedin
+      user_url: https://www.linkedin.com/in/helosilvareis/
