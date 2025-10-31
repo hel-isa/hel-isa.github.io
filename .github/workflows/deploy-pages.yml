@@ -1,4 +1,4 @@
-name: Deploy Pages (Jekyll or static)
+name: Deploy Pages (static)
 
 on:
   push:
@@ -21,22 +21,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # If you use Jekyll, uncomment the Ruby/Jekyll steps below.
-      # If your site is plain static files, skip to "Upload artifact".
-
-      - name: Install deps & Build (Jekyll)
-        run: |
-          bundle install
-          bundle exec jekyll build --trace --destination _site
-
-      # Upload site folder:
-      # - If Jekyll: path = _site
-      # - If plain static HTML: path = .
-      
-      - name: Upload artifact
+      - name: Upload artifact (root)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _site # change to "." if you are NOT using Jekyll
+          path: .   # serve the repo root as the site
 
   deploy:
     environment:
