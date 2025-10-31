@@ -1,0 +1,50 @@
+name: Deploy Pages (Jekyll or static)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # If you use Jekyll, uncomment the Ruby/Jekyll steps below.
+      # If your site is plain static files, skip to "Upload artifact".
+
+      - name: Install deps & Build (Jekyll)
+        run: |
+          bundle install
+          bundle exec jekyll build --trace --destination _site
+
+      # Upload site folder:
+      - If Jekyll: path = _site
+      # - If plain static HTML: path = .
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site # change to "." if you are NOT using Jekyll
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
