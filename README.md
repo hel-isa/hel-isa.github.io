@@ -78,12 +78,12 @@ Meta: segurança **mensurável**, **automatizada** e **amigável ao desenvolvedo
 ## 🧩 DevSecOps Insights
 
 <p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=heloisaferreira&show_icons=true&theme=dark&hide_border=true&count_private=true&include_all_commits=true" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=heloisaferreira&layout=compact&theme=dark&hide_border=true&langs_count=6" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api?username=hel-isa&show_icons=true&theme=dark&hide_border=true&count_private=true&include_all_commits=true" />
+  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hel-isa&layout=compact&theme=dark&hide_border=true&langs_count=6" />
 </p>
 
 <p align="center">
-  <img height="160" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=heloisaferreira&theme=github_dark" />
+  <img height="160" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=hel-isa&theme=github_dark" />
 </p>
 
 ---
