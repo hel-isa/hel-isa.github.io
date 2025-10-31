@@ -30,7 +30,7 @@ jobs:
           bundle exec jekyll build --trace --destination _site
 
       # Upload site folder:
-      - If Jekyll: path = _site
+      # - If Jekyll: path = _site
       # - If plain static HTML: path = .
       
       - name: Upload artifact
